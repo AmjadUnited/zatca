@@ -98,7 +98,7 @@ class ZATCA::Client
     request(
       path: "production/csids",
       method: :post,
-      body: { compliance_request_id: compliance_request_id.force_encoding('UTF-8') }
+      body: { compliance_request_id: compliance_request_id }
     )
   end
 
